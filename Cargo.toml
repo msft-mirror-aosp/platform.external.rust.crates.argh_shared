@@ -12,7 +12,7 @@
 [package]
 edition = "2018"
 name = "argh_shared"
-version = "0.1.10"
+version = "0.1.12"
 authors = [
     "Taylor Cramer <cramertj@google.com>",
     "Benjamin Brittain <bwb@google.com>",
@@ -22,3 +22,7 @@ description = "Derive-based argument parsing optimized for code size"
 readme = "README.md"
 license = "BSD-3-Clause"
 repository = "https://github.com/google/argh"
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
